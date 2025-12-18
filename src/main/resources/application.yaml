@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /notification-system
+
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/notification_system}
+    username: ${DB_USERNAME:notification_system_user}
+    password: ${DB_PASSWORD:ChangeMe_Notification1!}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+  flyway:
+    enabled: false
+    # url: ${FLYWAY_URL:${spring.datasource.url}}
+    user: flyway_user
+    password: ChangeMe_Flyway11!
+    schemas: ${FLYWAY_SCHEMA:notification_system}
+    default-schema: ${FLYWAY_SCHEMA:notification_system}
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    placeholder-replacement: true
+    placeholders:
+      schema: ${FLYWAY_SCHEMA:notification_system}
+      application_db_user: ${DB_APP_USER:notification_system_user}
+    create-schemas: true
+
+twilio:
+  account-sid: ${TWILIO_ACCOUNT_SID:placeholder_sid}
+  auth-token: ${TWILIO_AUTH_TOKEN:placeholder_token}
+  from-number: ${TWILIO_FROM_NUMBER:+12186950732}
+  api-base: ${TWILIO_API_BASE:https://api.twilio.com/2010-04-01}

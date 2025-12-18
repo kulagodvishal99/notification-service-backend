@@ -1,0 +1,58 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.example:notification-system >-------------------
+[INFO] Building notification-system 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.4.1:clean (default-clean) @ notification-system ---
+[INFO] Deleting D:\interview-prep\backend-prep\notification-system\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ notification-system ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ notification-system ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 14 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ notification-system ---
+[INFO] skip non existing resourceDirectory D:\interview-prep\backend-prep\notification-system\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ notification-system ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 17] to target\test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[3,23] package junit.framework does not exist
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[4,23] package junit.framework does not exist
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[5,23] package junit.framework does not exist
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[11,13] cannot find symbol
+  symbol: class TestCase
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[26,19] cannot find symbol
+  symbol:   class Test
+  location: class org.example.AppTest
+[INFO] 5 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.768 s
+[INFO] Finished at: 2025-12-18T20:04:08+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile) on project notification-system: Compilation failure: Compilation failure: 
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[3,23] package junit.framework does not exist
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[4,23] package junit.framework does not exist
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[5,23] package junit.framework does not exist
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[11,13] cannot find symbol
+[ERROR]   symbol: class TestCase
+[ERROR] /D:/interview-prep/backend-prep/notification-system/src/test/java/org/example/AppTest.java:[26,19] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class org.example.AppTest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
